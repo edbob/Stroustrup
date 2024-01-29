@@ -8,7 +8,7 @@ int main()
 
     cin >> name >> age;
 
-    cout << "Hello, " << name << " (Age: " << age * 12 << " Months Old)\n";
+    cout << "Hello, " << name << " (Age: " << age << " :" << age * 12 << " Months Old)\n";
 
     return 0;
 }
