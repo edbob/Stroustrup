@@ -2,15 +2,18 @@
 
 int main()
 {
-    string previos = " ";
-    string current;
-    while (cin >> current)
+    cout << "Пожалуста, введите слово\n";
+    vector<string> vs;
+    string word;
+    while (cin >> word)
     {
-        /* code */
-        if (previos == current)
-            cout << "Повторяющее слово: " << current << '\n';
-            previos = current;
+        vs.push_back(word);
+        for (int i = 0; i < vs.size(); ++i)
+        {
+            if (vs[i] == vs[i])
+                cout << "Походие слова " << vs[i] << '\n';
+        }
     }
-    
+
     return 0;
 }
