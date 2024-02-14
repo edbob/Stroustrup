@@ -9,7 +9,7 @@ int main()
         for (string x : arr)
             if (temp == x)
             {
-                cout << "Есть похожее слово: \n" << temp;
+                cout << "\nЕсть похожее слово: " << temp << '\n';
             }
         arr.push_back(temp);
     }
