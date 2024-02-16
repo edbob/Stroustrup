@@ -4,7 +4,7 @@ int main() {
     constexpr double cm_per_inch = 2.54;
     double length =1;
     char unit = 'a';
-    cout << "Введите длину"
+    cout << "Введите длину: "
          << " и единицу измерения (c или i ): \n";
     cin >> length >> unit;
     switch (unit)
