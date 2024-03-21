@@ -24,6 +24,6 @@ int main()
 
     fillUp(arr, size);
     countDigit(arr, size);
-    GnomeSort(arr, size);
+    //GnomeSort(arr, size);
     return 0;
 }

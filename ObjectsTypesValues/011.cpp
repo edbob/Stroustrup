@@ -10,19 +10,16 @@
 int main()
 {
     vector<int> arr;
-    int a;
+    int a, b, c;
     cout << "Введите 3 раных числа: " << '\n';
-    while (cin >> a)
+    while (cin >> a >> b >> c)
     {
         arr.push_back(a);
+        arr.push_back(b);
+        arr.push_back(c);
         sort(arr);
-        if (arr.size() == 3)
-        {
-            for (int i = 0; i <= arr.size(); ++i)
-            {
-                cout << "Осортерованые числа: " << arr[i] << '\n';
-            }
-        }
+        for (auto x : arr)
+            cout << x << ", \n";
     }
     return 0;
 }
