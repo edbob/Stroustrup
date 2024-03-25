@@ -7,17 +7,12 @@
 
 int main()
 {
-    vector<int> arr= {22,16,2,5,76,89,9,10,20};
+    vector<int> arr= {10,22,16,2,5,76,89,9,10,20};
 
     for(int t: arr)
     {
-         int res = t % 2;
-         if(res!=1)
-         {
-            cout << t << " Четное" << '\n';
-         }else{
-            cout << t << " Не четное" << '\n';
-         }
+         if(t%2) cout << t << " не четное" << '\n';
+            else cout << t << " четное" << '\n';
     }
     return 0;
 }
