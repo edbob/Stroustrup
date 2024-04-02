@@ -17,7 +17,7 @@ int main() {
         cout << length << "cm == "
              << length/ cm_per_inch <<" in \n";
     default:
-        cout << "Извините, я не знаю что тое '"
+        cout << "Извините, я не знаю что это '"
              << unit << "'\n";
         break;
     }
