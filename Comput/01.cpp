@@ -2,22 +2,28 @@
 
 int main()
 {
-    cout << "Вы любите рыбу: да(1) или нет(2)?" << '\n';
-    int s;
-    cin >> s;
-    switch (s)
+    cout << "ведите любую цыфру: \n";
+    char a;
+    while (cin >> a)
     {
-    case 1:
         /* code */
-        cout << "Вы любите рыбу мои поздравления!";
-        break;
-    case 2:
-        /* code */
-        cout << "Вы не любите рыбу!";
-        break;
-    default:
-        cout << "Нет такого варианта!";
-        break;
+        switch (a)
+        {
+        case '0':
+        case '2':
+        case '4':
+        case '8':
+            cout << a << " четное!\n";
+            break;
+        case '1':
+        case '3':
+        case '7':
+            cout << a << " не четное!\n";
+            break;
+        default:
+            cout << "что то пошло не так!\n";
+            break;
+        }
     }
     return 0;
 }
